@@ -1,11 +1,10 @@
-# 🤖 Bot for Whatsapp
+# 📦 RastraZap
 
-<img src="https://github.com/walysonfelipe/bot/blob/master/.vscode/readme-assets/readme.png?raw=true" alt="banner">
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/walysonfelipe/bot?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/walysonfelipe/bot?style=for-the-badge)
 
-> Repositório para teste da biblioteca Venom Bot.
+> 📦 Rastrear encomendas pelo Whatsapp utilizando Venom Bot..
 
 ## 💻 Pré-requisitos
 
