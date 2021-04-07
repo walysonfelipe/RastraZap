@@ -1,5 +1,7 @@
-# 📦 RastraZap
 
+<img src="https://github.com/walysonfelipe/bot/blob/master/.vscode/readme-assets/readme.png?raw=true" alt="banner">
+
+# 📦 RastraZap
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/walysonfelipe/bot?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/walysonfelipe/bot?style=for-the-badge)
