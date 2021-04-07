@@ -9,8 +9,9 @@
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
-    "venom-bot": "^3.0.9"
+    "venom-bot": "^3.0.13"
   },
   "devDependencies": {
     "@babel/cli": "^7.13.10",
