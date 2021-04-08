@@ -11,6 +11,7 @@ import {
   changeUser,
   User
 } from './lib/user/user'
+import fetch from 'node-fetch';
 /*
    Lista de Mensagens Predefinidas
    Vefirificar quais são iguais
@@ -64,8 +65,11 @@ import {
       }
       else if(user.stage === 1){
        if(message.body.length === 13 ){
-
-
+        return new Promise(function (resolve, reject) {
+             api(message.body).then((data:any)=>{
+             console.log(data);
+        })
+      });
         client
         .sendText(message.from, 'Seu Pacote está aqui 📦')
         .then((result) => {
@@ -92,6 +96,16 @@ import {
           });
       }
     });*/
+  }
+
+
+ async function api(code:any) {
+  return new Promise(function (resolve, reject) {
+  fetch("https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=" + code).then(res => res.json())
+  .then(res => {
+      resolve(res);
+  });
+  });
   }
 
 
