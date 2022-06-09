@@ -1,10 +1,10 @@
 
-<img src="https://github.com/walysonfelipe/bot/blob/master/.vscode/readme-assets/readme.png?raw=true" alt="banner">
+<img src="https://github.com/walysonfelipe/RastraZap/blob/master/.vscode/readme-assets/readme.png?raw=true" alt="banner">
 
 # 📦 RastraZap
 
-![GitHub repo size](https://img.shields.io/github/repo-size/walysonfelipe/bot?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/walysonfelipe/bot?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/walysonfelipe/RastraZap?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/walysonfelipe/RastraZap?style=for-the-badge)
 
 > 📦 Rastrear encomendas pelo Whatsapp utilizando Venom Bot..
 
