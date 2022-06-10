@@ -1,38 +1,28 @@
 {
-  "name": "bot",
-  "version": "1.0.0",
+  "name": "rastrazap",
+  "version": "2.0.0",
+  "description": "",
   "main": "index.js",
-  "repository": "https://github.com/walysonfelipe/bot.git",
-  "author": "Walyson Felipe",
-  "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts"
+    "dev": "ts-node-dev --inspect --ignore-watch node_modules app/createSession.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walysonfelipe/RastraZap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walysonfelipe/RastraZap/issues"
+  },
+  "homepage": "https://github.com/walysonfelipe/RastraZap#readme",
   "dependencies": {
-    "@types/node-fetch": "^2.5.9",
-    "axios": "^0.21.1",
-    "dotenv": "^8.2.0",
-    "venom-bot": "^3.0.13"
+    "axios": "^0.27.2",
+    "venom-bot": "^4.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.13.10",
-    "@babel/core": "^7.13.10",
-    "@babel/node": "^7.13.10",
-    "@babel/plugin-proposal-class-properties": "^7.13.0",
-    "@babel/plugin-proposal-decorators": "^7.13.5",
-    "@babel/preset-env": "^7.13.10",
-    "@babel/preset-typescript": "^7.13.0",
-    "@types/node": "^14.14.33",
-    "@typescript-eslint/eslint-plugin": "^4.17.0",
-    "@typescript-eslint/parser": "^4.17.0",
-    "babel-plugin-module-resolver": "^4.1.0",
-    "eslint": "^7.12.1",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "ts-node-dev": "^1.1.6",
-    "tsconfig-paths": "^3.9.0",
-    "typescript": "^4.2.3"
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.3"
   }
 }
