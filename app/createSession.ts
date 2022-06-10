@@ -1,9 +1,9 @@
 import { create} from 'venom-bot';
+import messageReceiver from './controllers/messageReceiver';
 
-create('PedBot')
+create('rastrazap')
     .then((client) => {
-      console.log(client);
-      //  messageReceiver(client);
+       messageReceiver(client);
     }).catch(clientErr => {
         console.log(clientErr);
     });
