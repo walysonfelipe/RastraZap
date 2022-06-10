@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev --inspect --ignore-watch node_modules app/createSession.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ts-node-dev --inspect --ignore-watch node_modules app/services/sendMessages.ts"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/walysonfelipe/RastraZap#readme",
   "dependencies": {
     "axios": "^0.27.2",
+    "correios-brasil": "^2.2.2",
     "venom-bot": "^4.2.0"
   },
   "devDependencies": {

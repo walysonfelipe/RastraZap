@@ -2,7 +2,7 @@ import {
   Whatsapp
 } from 'venom-bot'
 
-import { Message } from '../models/messageModel';
+import { Message } from '../../models/messageModel';
 
 
 export default async function (message:Message, client:Whatsapp){

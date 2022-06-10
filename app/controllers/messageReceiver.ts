@@ -4,7 +4,8 @@ import {
 
 import { Message } from '../models/messageModel';
 
-import readMessages from '../services/readMessages';
+import readMessages from '../services/messages/readMessages';
+
 export default async function (client: Whatsapp) {
   client.onAnyMessage(async (message: Message) => {
     let response = await readMessages(message,client);
