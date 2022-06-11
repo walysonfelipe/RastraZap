@@ -4,26 +4,28 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc -p .",
     "dev": "ts-node-dev --inspect --ignore-watch node_modules app/createSession.ts",
-    "test": "ts-node-dev --inspect --ignore-watch node_modules app/services/sendMessages.ts"
+    "db": "ts-node-dev --inspect --ignore-watch node_modules app/subscribers/database.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/walysonfelipe/RastraZap.git"
   },
-  "author": "",
+  "author": "walyson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/walysonfelipe/RastraZap/issues"
   },
   "homepage": "https://github.com/walysonfelipe/RastraZap#readme",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.2.4"
+  },
   "dependencies": {
     "axios": "^0.27.2",
     "correios-brasil": "^2.2.2",
     "venom-bot": "^4.2.0"
-  },
-  "devDependencies": {
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^4.7.3"
   }
 }

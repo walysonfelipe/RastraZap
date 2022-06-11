@@ -3,7 +3,7 @@ import messageReceiver from './controllers/messageReceiver';
 
 create('rastrazap')
     .then((client) => {
-       messageReceiver(client);
+       messageReceiver(client)
     }).catch(clientErr => {
         console.log(clientErr);
     });

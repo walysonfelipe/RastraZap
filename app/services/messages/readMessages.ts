@@ -3,11 +3,15 @@ import {
 } from 'venom-bot'
 
 import { Message } from '../../models/messageModel';
+import { User } from '../../models/userModel';
 
+export default async function (message: Message, client: Whatsapp, user: User) {
+  if (message.isGroupMsg === false && message.type === 'chat') {
+    await client.sendSeen(message.from);
 
-export default async function (message:Message, client:Whatsapp){
-  if(message.isGroupMsg === false && message.type === 'chat' && !message.fromMe) {
-      await client.sendSeen(message.from);
-        return true;
+    // if(user.stage !== 0){
+    //   para criar o menu e opções
+    // }
+    return true;
   }
 }

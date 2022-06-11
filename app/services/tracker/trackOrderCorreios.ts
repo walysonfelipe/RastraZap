@@ -2,7 +2,7 @@ import {
  rastrearEncomendas
 } from 'correios-brasil'
 
-export default async function ({ code }: { code: any; }){
+export default async function (code: never){
 const codes = [];
 
 codes.push(code);

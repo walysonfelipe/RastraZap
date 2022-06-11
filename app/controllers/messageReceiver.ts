@@ -5,17 +5,27 @@ import {
 import { Message } from '../models/messageModel';
 
 import readMessages from '../services/messages/readMessages';
-
+import userService from '../services/userService'
+import executeStages from '../services/stages/execute';
+import sendMessages from '../services/messages/sendMessages';
+import { User } from '../models/userModel';
 export default async function (client: Whatsapp) {
   client.onAnyMessage(async (message: Message) => {
-    let response = await readMessages(message,client);
+    let user: User;
+    if (
+      !message.fromMe &&
+      message.from !== 'status@broadcast' &&
+      message.isGroupMsg === false) {
+      user = await userService(message.from);
 
-    if(response){
-      await client.sendText(message.from, 'Teste #1')
-      .catch((erro) => {
-        console.error('Error when sending: ', erro)
+      let response = await readMessages(message, client, user);
 
-      })
+      if (response) {
+        let messageToSend = await executeStages(user)
+
+        sendMessages(messageToSend, message, client);
+      }
+
     }
   });
 }
