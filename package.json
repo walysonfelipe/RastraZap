@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc -p .",
-    "dev": "ts-node-dev --inspect --ignore-watch node_modules app/createSession.ts",
-    "teste": "ts-node-dev --inspect --ignore-watch node_modules app/services/tracker/trackOrderCorreios.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node-dev --inspect --ignore-watch node_modules app/createSession.ts"
   },
   "repository": {
     "type": "git",
