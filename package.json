@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc -p .",
     "dev": "ts-node-dev --inspect --ignore-watch node_modules app/createSession.ts",
-    "db": "ts-node-dev --inspect --ignore-watch node_modules app/subscribers/database.ts",
+    "teste": "ts-node-dev --inspect --ignore-watch node_modules app/services/tracker/trackOrderCorreios.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

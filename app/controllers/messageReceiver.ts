@@ -21,7 +21,7 @@ export default async function (client: Whatsapp) {
       let response = await readMessages(message, client, user);
 
       if (response) {
-        let messageToSend = await executeStages(user)
+        let messageToSend = await executeStages(user,message)
 
         sendMessages(messageToSend, message, client);
       }
